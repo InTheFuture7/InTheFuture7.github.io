@@ -15,3 +15,28 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## code
+
+``` python
+import pandas as pd
+print("a")
+```
+
+``` python title="test.py"
+import pandas as pd
+print("a")
+```
+
+## demo
+
+``` python linenums="1"
+print(1)
+print(2)
+```
+
+``` python hl_lines="1" linenums="1"
+print(1)
+print(2)
+```
+
