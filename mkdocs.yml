@@ -1,0 +1,5 @@
+site_name: 个人网站
+site_url: https://InTheFuture7.github.io/
+site_author: NeXtep
+theme:
+  name: material #主题
