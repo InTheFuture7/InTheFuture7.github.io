@@ -3,3 +3,9 @@ site_url: https://InTheFuture7.github.io/
 site_author: NeXtep
 theme:
   name: material #主题
+nav:
+  - 主页: index.md
+  - 项目: projects.md
+  - 关于: about.md
+  - 留言: message.md
+  - 搜索: search
