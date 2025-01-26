@@ -1,3 +1,13 @@
+---
+title: 主页  # 页面名称
+hide:
+#    - navigation # 显示右
+#    - toc #显示左
+#    - footer
+#    - feedback  
+comments: true  #默认不开启评论
+---
+
 # 首页
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
@@ -39,4 +49,3 @@ print(2)
 print(1)
 print(2)
 ```
-
