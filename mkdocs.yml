@@ -3,7 +3,7 @@ site_url: https://InTheFuture7.github.io/
 site_author: NeXtep
 theme:
     name: material #主题
-    custom_dir: docs\overrides
+    custom_dir: docs/overrides
 
 
     language: en
