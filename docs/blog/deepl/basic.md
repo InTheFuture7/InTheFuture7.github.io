@@ -1,4 +1,8 @@
-# Encoder & Decoder
+# transformer 基础
+
+概要：简要记录 Encoder-Decoder 架构、seq2seq 模型、Attention 机制
+
+## Encoder & Decoder
 
 encoder 接收输入，生成一个固定长度的上下文向量（编码器生成的最终隐藏状态）；decoder 接收上下文向量（或状态）+输入，获得输出。
 
@@ -6,7 +10,7 @@ encoder 接收输入，生成一个固定长度的上下文向量（编码器生
 
 缺点：上下文长度固定，导致丢失信息。
 
-## 代码实现
+### 代码实现
 
 ``` python
 form torch import nn
@@ -39,7 +43,7 @@ class EncoderDecoder(nn.Module):
         return self.decoder(dec_X, dec_state)
 ```
 
-# seq2seq
+## seq2seq
 
 seq2seq 是一种使用 encoder-decoder 框架解决**可变长度序列生成序列**问题的模型。
 
@@ -52,8 +56,7 @@ seq2seq 是一种使用 encoder-decoder 框架解决**可变长度序列生成�
 3. 为什么 seq2seq 存在短期记忆限制？seq2seq 里面的 rnn 模块只处理序列中的当前元素信息吗？也会有上一时间步的隐藏状态信息吧？但是没有更长时间前的信息了
 4. encoder 会输出一个最终隐藏状态，decoder 中每个 rnn 模块接收的隐藏状态都一样吗？还是说 decoder 中的每个 rnn 模块会在上一个的基础上增加一些信息？
 
-
-## 训练和推理
+### 训练和推理
 
 ![](https://raw.githubusercontent.com/InTheFuture7/attachment/main/202502121101132.png)
 
@@ -61,7 +64,7 @@ seq2seq 是一种使用 encoder-decoder 框架解决**可变长度序列生成�
 
 推理过程：在 decoder 中，每个时间步的输入使用上一时间步的预测输出
 
-# Attention 机制
+## Attention 机制
 
 不再要求 encoder 基于整个序列编码出一个固定长度的上下文向量，而是编码出一个上下文向量序列，解决信息丢失和短期记忆限制的问题。
 
