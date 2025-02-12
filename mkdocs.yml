@@ -68,12 +68,13 @@ nav:
     - 博客: 
         - blog/index.md
         - 机器学的数学基础: 
-            - blog/math4ml/index.md
             - 1. 线性代数: blog/math4ml/linear_algebra.md
             - 2. 概率论: blog/math4ml/probability_theory.md
             - 3. 统计学: blog/math4ml/statistics.md    
         - 深度学习:
             - blog/deepl/basic.md
+        - 前沿论文:
+            - blog/papers/index.md
     - 代码: code/index.md
     - 标签: tag/index.md
     - 工具: tool/index.md
